@@ -15,11 +15,11 @@ public class ExemploArraysBidimensional {
     public static void main(String[] args) {
         Notas not=new Notas();
         not.crearTabla();
-        not.amosar();
-        not.mediaAlumno();
+//        not.amosar();
+//        not.mediaAlumno();
         not.mediaAlumno2();
-        not.mediaModulo();
-        not.ordenar();
+//        not.mediaModulo();
+//        not.ordenar();
         not.amosar();
         
     }
