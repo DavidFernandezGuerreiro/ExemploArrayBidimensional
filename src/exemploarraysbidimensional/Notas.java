@@ -11,8 +11,8 @@ import javax.swing.JOptionPane;
 public class Notas {
     int[][]notas=new int[4][3];
     int[]medias=new int[notas.length];
-    String[]nomes={"Roberto","Maria","Pepe","Ana"};
-    String[]modulos={"Prog","BD","CD"};
+    String[]nomes={"Roberto     ","Maria       ","Pepe        ","Ana         "};
+    String[]modulos={"           Prog      ","BD       ","CD       "};
 
     public void crearTabla(){
         for(int f=0;f<notas.length;f++){
@@ -24,12 +24,18 @@ public class Notas {
     
     public void amosar(){
         System.out.println("\n");
-        for(int f=0;f<notas.length;f++){
-            for(int c=0;c<notas[f].length;c++){
-                System.out.print(notas[f][c]+"    ");
+        for(int fm=0;fm<modulos.length;fm++){ //fila modulos
+            System.out.print(modulos[fm]);
+        }
+        System.out.println(" ");
+            for(int f=0;f<notas.length;f++){
+                System.out.print(nomes[f]); //fila nomes alumnos
+                    for(int c=0;c<notas[f].length;c++){
+                        System.out.print(notas[f][c]+"        "); 
+                    } 
+                    System.out.println(+medias[f]);
+                    System.out.println("\n");
             }
-            System.out.println("\n");
-        }       
     }
     
     public void mediaAlumno(){
